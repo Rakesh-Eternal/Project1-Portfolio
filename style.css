@@ -1,0 +1,72 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #0d1b2a; /* Dark background */
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #00bcd4; /* Futuristic Greenish Blue */
+  font-size: 3rem;
+  text-shadow: 0 0 20px #00bcd4;
+}
+
+p {
+  color: #b0bec5; /* Light grey for secondary text */
+  font-size: 1.2rem;
+}
+
+/* Portfolio Container */
+.portfolio-container {
+  display: flex;
+  gap: 20px;
+}
+
+.portfolio-button {
+  background-color: #00bcd4; /* Button color */
+  color: #000;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 0 15px #00bcd4; /* Glow effect */
+}
+
+.portfolio-button:hover {
+  transform: scale(1.05);
+  background-color: #00ffcc; /* Lighter color on hover */
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+  background-color: #000;
+  color: #00bcd4; /* Futuristic Greenish Blue */
+  padding: 10px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .portfolio-button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+  }
+}
