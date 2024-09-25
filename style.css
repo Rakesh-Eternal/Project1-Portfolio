@@ -82,7 +82,6 @@ footer {
   animation: twinkle 1s forwards;
   box-shadow: 0 0 10px rgba(255, 223, 0, 0.8), 0 0 20px rgba(255,215,0,0.5);
 }
-
 /* Twinkling and Shrinking Animation */
 @keyframes twinkle {
   0% {
