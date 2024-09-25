@@ -26,5 +26,27 @@
   <footer>
     <p>© 2024 Rakesh's Portfolio. All Rights Reserved.</p>
   </footer>
+    <script>
+  document.addEventListener('mousemove', (e) => {
+    // Create a star element that follows the cursor
+    let star = document.createElement('div');
+    star.classList.add('cursor-star');
+    document.body.appendChild(star);
+
+    // Position the star at the mouse's current position
+    star.style.left = `${e.clientX}px`;
+    star.style.top = `${e.clientY}px`;
+
+    // Randomize the size of the stars to make the effect more dynamic
+    let size = Math.random() * 10 + 5;
+    star.style.width = `${size}px`;
+    star.style.height = `${size}px`;
+
+    // Set a timeout to remove the star after the shrinking effect
+    setTimeout(() => {
+      star.remove();
+    }, 1000); // The star will exist for 1 second
+  });
+    </script>
 </body>
 </html>
